@@ -387,7 +387,7 @@ def WriteFullOTAPackage(input_zip, output_zip):
   script.ShowProgress(0.5, 0)
   script.Print("")
   script.Print("")
-  script.Print("Codename Android Jellybean")
+  script.Print("Codename Android Jellybean JoyRide")
   script.Print("")
   script.Print(" www.codenameandroid.com  ")
   script.Print("")
