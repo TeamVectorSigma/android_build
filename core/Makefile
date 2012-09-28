@@ -1275,10 +1275,10 @@ otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
 squish: otapackage
 ifneq ($(TARGET_CUSTOM_RELEASETOOL),)
 	@echo "Running custom releasetool..."
-	$(hide) OTAPACKAGE=$(PWD)/$(INTERNAL_OTA_PACKAGE_TARGET) $(TARGET_CUSTOM_RELEASETOOL)
+	$(hide) $(TARGET_CUSTOM_RELEASETOOL)
 else
 	@echo "Running releasetool..."
-	$(hide) OTAPACKAGE=$(PWD)/$(INTERNAL_OTA_PACKAGE_TARGET) ./tools/squisher
+	$(hide) ./tools/squisher
 endif
 
 # -----------------------------------------------------------------
